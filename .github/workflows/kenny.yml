@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  compress:
+  checkin:
     runs-on: ubuntu-latest
     steps:
       - uses: yanglbme/cordcloud-action@main
