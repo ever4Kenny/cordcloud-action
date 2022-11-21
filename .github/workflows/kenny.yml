@@ -1,0 +1,16 @@
+name: Compress
+
+on:
+  schedule:
+    - cron: "2 14 * * *"
+  workflow_dispatch:
+
+jobs:
+  compress:
+    runs-on: ubuntu-latest
+    if: github.repository == 'yanglbme/cordcloud-action'
+    steps:
+      - uses: yanglbme/cordcloud-action@main
+        with:
+          email: ${{ secrets.CC_EMAIL }}
+          passwd: ${{ secrets.CC_PASSWD }}
