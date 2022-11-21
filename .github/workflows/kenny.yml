@@ -1,8 +1,8 @@
-name: Compress
+name: kenny
 
 on:
   schedule:
-    - cron: "2 14 * * *"
+    - cron: "20 14 * * *"
   workflow_dispatch:
 
 jobs:
